@@ -1,0 +1,41 @@
+.bg-img {
+  padding: 10%;
+  padding-top: 20%;
+  background-image: url("../img/whitebg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+
+.about-container {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.about-text {
+  margin-right: 30px;
+}
+
+.about-text p:first-child {
+  margin-top: 0;
+}
+
+.about-image img {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    flex-direction: column;
+  }
+}

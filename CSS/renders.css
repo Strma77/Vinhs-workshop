@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ebrima", sans-serif;
+  background-color: #181818;
+  color: white;
+  font-weight: bold;
+  padding-top: 200px; /* Compensating for the fixed header */
+}
+
+.overview {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: flex-start; /* Align items to the left */
+  padding: 20px; /* Add padding around the div */
+  font-size: 1.5em; /* Increase font size */
+  color: white; /* Set text color to white */
+  margin-bottom: 20px; /* Space below this div */
+}
+
+.overview a {
+  text-decoration: none;
+  color: white;
+}
+
+.overview a:hover {
+  display: inline-block;
+  text-decoration: none;
+  color: orange;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+.prices {
+  text-align: center; /* Center align the text */
+  margin: 20px auto; /* Center the whole div */
+  padding: 20px; /* Add padding inside the div */
+  border-radius: 10px; /* Optional: rounded corners */
+  font-size: 22px;
+}
+
+.highlight {
+  border: 1px solid #7f3626; /* Creates a border around the text */
+  padding: 2px; /* Adds some space around the text */
+}
+
+.prices h2 {
+  margin: 10px 0; /* Space above and below the title */
+}
+
+.prices ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.prices li {
+  margin: 10px 0; /* Space between list items */
+}
+
+.prices .indent {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  /* Responsive adjustments */
+  .overview {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .prices {
+    font-size: 1em; /* Adjust font size for prices */
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  margin: 50px 0;
+}
+
+.title::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: white;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Helmet portraits grid */
+.row-helmets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.helmets img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.helmets img:hover {
+  transform: scale(1.1);
+}
+
+/* 3D Renders grid */
+.row-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.images img {
+  width: 100%;
+  height: auto;
+}

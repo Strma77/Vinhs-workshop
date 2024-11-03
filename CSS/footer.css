@@ -1,0 +1,84 @@
+.footer {
+  background-color: #131313; /* Same as header */
+  color: white; /* Default text color */
+  padding: 20px; /* Padding around the footer */
+  z-index: 9999;
+}
+
+.foot-container {
+  max-width: 2000px; /* Limit the width */
+  margin: auto; /* Center the footer content */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between columns */
+  align-items: center; /* Center items vertically */
+}
+
+.row {
+  display: flex; /* Flexbox for row layout */
+  width: 100%; /* Full width */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+  flex: 1; /* Each column takes equal space */
+  text-align: center; /* Center text */
+  padding: 10px; /* Padding within columns */
+}
+
+.footer-col-1 {
+  flex: 1; /* Each column takes equal space */
+  text-align: left; /* Align text to the left for these columns */
+  font-size: 18px;
+}
+
+.footer-col-2 {
+  text-align: center; /* Center text for the logo column */
+}
+
+.footer-col-2 img {
+  width: 180px; /* Set a fixed size for the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.thank-you {
+  color: gray; /* Gray text for thank you message */
+  font-size: 20px;
+}
+
+.footer-col-3 h2,
+.footer-col-1 h2 {
+  color: white; /* White for header text */
+}
+
+.footer-col-3 p {
+  margin: 5px 10px; /* Margin for spacing between icons */
+  font-size: 30px;
+  display: inline-block;
+}
+
+.footer a {
+  color: white; /* White links */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: orange;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .foot-container {
+    flex-direction: column; /* Stack columns vertically */
+    align-items: center; /* Center items */
+  }
+
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3 {
+    text-align: center; /* Center text for mobile */
+    margin-bottom: 20px; /* Spacing between sections */
+  }
+}

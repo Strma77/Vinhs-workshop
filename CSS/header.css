@@ -1,0 +1,168 @@
+@font-face {
+  font-family: "Ebrima";
+  src: url("../ebrimabd.ttf") format("truetype"); /* Adjust path based on your folder structure */
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Ebrima", sans-serif; /* Use your preferred font */
+  background-color: rgb(19, 19, 19);
+}
+
+/* #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+} */
+
+#preloader img {
+  width: 300px; /* Adjust this size as needed */
+  height: auto;
+}
+
+.header {
+  position: fixed; /* Fixed position */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #131313; /* Adjust as needed */
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.5); /* White glow effect */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  transition: background-color 0.3s; /* Transition for background color change (if needed) */
+}
+
+.container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center content */
+}
+
+.logo img {
+  width: 300px; /* Set the initial size for the logo */
+  transition: transform 0.3s; /* Transition for scaling */
+}
+
+.logo img:hover {
+  transform: scale(1.1); /* Scale the logo on hover */
+}
+
+/* Navbar Styles */
+.navbar {
+  position: relative; /* Allows for absolute positioning of the dropdown */
+}
+
+.hamburger {
+  display: none; /* Hide the hamburger menu by default */
+  flex-direction: column;
+  cursor: pointer; /* Show cursor on hover */
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.line {
+  width: 25px; /* Width of the lines */
+  height: 3px; /* Height of the lines */
+  background-color: #cacaca; /* Line color */
+  margin: 4px 0; /* Spacing between lines */
+  transition: all 0.3s; /* Transition for line animations */
+}
+
+/* Navbar links styles */
+.navbar nav ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 10px 0 0; /* Adjust margin */
+}
+
+.navbar nav ul li {
+  display: inline; /* Display links in a line */
+  margin: 0 15px; /* Spacing between links */
+}
+
+.navbar nav ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #e8e8e8; /* Link color */
+  font-size: 25px; /* Font size for navigation links */
+  transition: color 0.3s; /* Transition for link color change */
+  display: inline-block;
+}
+
+.navbar nav ul li a:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+  color: orange;
+}
+
+.navbar nav ul li.active a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* Scroll Indicator Styles */
+.scroll-indicator {
+  position: fixed; /* Keep it fixed at the top */
+  top: 0; /* Position it at the top of the viewport */
+  left: 0; /* Align it to the left */
+  height: 5px; /* Set the height of the indicator */
+  background-color: orange; /* Color of the indicator */
+  width: 0; /* Initial width is 0, will expand based on scroll */
+  transition: width 0.2s ease; /* Smooth transition effect */
+  z-index: 9999; /* Ensure it appears above other content */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger menu on mobile */
+  }
+
+  .navbar nav ul {
+    display: none; /* Hide the navbar links by default */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position the dropdown menu */
+    right: 0; /* Align to the right */
+    background-color: #131313; /* Background color for dropdown */
+    width: 100%; /* Full width of the container */
+    padding: 10px 0; /* Padding around links */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2); /* Shadow for dropdown */
+  }
+
+  .navbar nav ul.show {
+    display: flex; /* Show the dropdown menu when toggled */
+  }
+
+  .navbar nav ul li {
+    display: block; /* Stack links vertically */
+    margin: 5px 0; /* Add margin between links */
+    text-align: center; /* Center the text */
+  }
+
+  .logo img {
+    width: 120px; /* Smaller logo size on mobile */
+  }
+
+  .navbar nav ul li a {
+    font-size: 18px; /* Adjust font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 100px; /* Further reduce logo size on very small screens */
+  }
+
+  .navbar nav ul li a {
+    font-size: 16px; /* Further adjust font size for small screens */
+  }
+}

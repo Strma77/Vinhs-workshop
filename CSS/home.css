@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "Geometr";
+  src: url("../ufonts.com_geometr415-blk-bt-black.ttf") format("truetype"); /* Adjust path based on your folder structure */
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*----------Index text----------*/
+
+.link {
+  position: fixed;
+  font-size: 100px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+  font-family: "Geometr", sans-serif;
+  text-decoration: none;
+}
+
+#renders {
+  top: 50%;
+  left: 12%;
+}
+
+#figurines {
+  top: 22%;
+  left: 5%;
+}
+
+#helmets {
+  top: 33%;
+  left: 58%;
+}
+
+a:hover {
+  transform: scale(115%);
+}
+
+/*----------Index button----------*/
+
+:root {
+  --clr-neon: hsl(47, 62%, 82%);
+}
+
+button {
+  background: none;
+}
+
+#start1,
+#start2,
+#start3 {
+  position: fixed;
+  font-size: 30px;
+  padding: 0.25em 0.5em;
+  background-color: transparent;
+  border: 3px solid #edce8d;
+  border-radius: 8px;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: "Geometr", sans-serif;
+  text-decoration: none;
+  box-shadow: inset 0 0 0.5em var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+}
+
+#start1 {
+  top: 50%;
+  left: 32%;
+}
+
+#start2 {
+  top: 50%;
+  left: 46%;
+}
+
+#start3 {
+  top: 50%;
+  left: 61%;
+}
+
+#start1:hover,
+#start2:hover,
+#start3:hover {
+  transform: scale(120%);
+}

@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Geometr";
+    src: url("../ufonts.com_geometr415-blk-bt-black.ttf") format("truetype"); /* Adjust path based on your folder structure */
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Add margin to the first section */
+section:first-of-type {
+    margin-top: 187px; /* Same as header height to push the section down */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height per section */
+    position: relative;
+    font-family: 'Geometr';
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.fade-in-link {
+    font-size: 3rem;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    
+}
+
+/* Media query for larger screens */
+@media (min-width: 1270px) {
+    body {
+        display: none; /* Or redirect to the desktop version */
+    }
+}
+
+@media (max-width: 768px){
+    section:first-of-type {
+        margin-top: 123px; 
+    }
+}
+
+@media (max-width: 480px) {
+    section:first-of-type {
+        margin-top: 115px; 
+    }
+}

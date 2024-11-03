@@ -1,0 +1,108 @@
+/* Existing styles */
+.bg-img {
+  background-image: url("../img/Contact.png");
+  width: 100%;
+  height: 100vh;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contact-container {
+  width: 100%;
+}
+
+.contact-box {
+  width: 90%;
+  border-radius: 40px;
+  max-width: 580px;
+  margin-top: -200px;
+  position: absolute;
+  top: 85%;
+  left: 20%; /* Keep left alignment */
+  transform: translate(-50%, -50%);
+  background: #131313;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+
+.contact-box h1 {
+  font-size: 30px;
+  margin-bottom: 60px;
+  padding-right: 270px;
+  color: #fff;
+  position: relative;
+}
+
+.contact-box h1::after {
+  content: "";
+  width: 150px;
+  height: 4px;
+  border-radius: 30px;
+  background: #750000;
+  position: absolute;
+  bottom: -12px;
+  left: 22%;
+  transform: translate(-50%);
+}
+
+.input-fields {
+  background: #e8e8e8;
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  max-height: 65px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+}
+
+.Subject {
+  resize: vertical;
+}
+
+input,
+textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 18px 15px;
+}
+
+.input-fields i {
+  margin-left: 15px;
+  color: #999;
+}
+
+.inputs {
+  margin-top: 100px;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  flex-basis: 48%;
+  background: #750000;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 1s;
+}
+
+/* Responsive styles */
+@media (max-width: 1250px) {
+  .contact-box {
+    left: 50%; /* Center on smaller screens */
+    transform: translate(-50%, -50%);
+  }
+}
