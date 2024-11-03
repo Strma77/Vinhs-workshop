@@ -8,10 +8,10 @@ function checkScreenSize() {
     // Avoid repeated redirects by checking the current URL path only once
     if (isMobileView && window.location.pathname.endsWith("index.html")) {
         // Redirect to mobile version
-        window.location.href = "../HTML/mobile-home.html";
+        window.location.href = "../mobile-home.html";
     } else if (!isMobileView && window.location.pathname.endsWith("mobile-home.html")) {
         // Redirect to desktop version
-        window.location.href = "../HTML/index.html";
+        window.location.href = "../index.html";
     }
 }
 
