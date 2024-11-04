@@ -5,7 +5,7 @@ canvas.height = window.innerHeight;
 const context = canvas.getContext("2d");
 const frameCount = 300;
 
-const currentFrame = (index) => `Animation/${(index + 1).toString()}.jpg`;
+const currentFrame = (index) => `./Animation/${(index + 1).toString()}.jpg`;
 
 //---------------Index declaration---------------//
 let renders = document.querySelector("#renders")
