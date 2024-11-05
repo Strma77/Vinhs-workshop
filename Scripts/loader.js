@@ -6,13 +6,13 @@ function checkScreenSize() {
     const isMobileView = screenWidth < 1270;
 
     // Avoid repeated redirects by checking the current URL path only once
-    if (isMobileView && window.location.pathname.endsWith("index.html")) {
+    if (isMobileView && window.location.pathname.endsWith("mobile-home.html")) {
         // Redirect to mobile version
-        window.location.href = "./mobile-home.html";
-        console.log("success")
-    } else if (!isMobileView && window.location.pathname.endsWith("mobile-home.html")) {
-        // Redirect to desktop version
         window.location.href = "./index.html";
+        console.log("success")
+    } else if (!isMobileView && window.location.pathname.endsWith("index.html")) {
+        // Redirect to desktop version
+        window.location.href = "./mobile-home.html";
         console.log("success")
     }
 }
