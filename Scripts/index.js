@@ -3,8 +3,15 @@ document.addEventListener("DOMContentLoaded", function() {
     const hamburger = document.querySelector(".hamburger");
     const navbarLinks = document.querySelector(".navbar nav ul");
 
-    hamburger.addEventListener("click", function() {
-        navbarLinks.classList.toggle("show"); // Toggle the 'show' class
+    hamburger.addEventListener("click", function(event) {
+        event.stopPropagation(); // Prevent click from propagating to document
+        navbarLinks.classList.toggle("show");
+    });
+
+    document.addEventListener("click", function(event) {
+        if (!navbarLinks.contains(event.target) && !hamburger.contains(event.target)) {
+            navbarLinks.classList.remove("show"); // Remove the 'show' class
+        }
     });
 });
 
