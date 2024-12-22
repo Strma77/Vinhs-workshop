@@ -10,10 +10,8 @@
 
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/renders.css" />
 
-    <script src="Scripts/loader.js"></script>
-	  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -32,23 +30,201 @@
       name="keywords"
       content="renders, helmets, figurines, 3d print, star wars, 3d models, creative, clone"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <!-- <div id="pre`">
-      <img src="img/Preloader.gif" alt="Loading..." />
+    <!-- <div id="preloader">
+      <img src="../img/Preloader.gif" alt="Loading..." />
     </div> -->
 
-    <a href="HTML/renders.html" class="link" id="renders">RENDERS</a>
-    <a href="HTML/figurines.html" class="link" id="figurines">FIGURINES</a>
-    <a href="HTML/helmets.html" class="link" id="helmets">HELMETS</a>
+    <div class="scroll-indicator"></div>
+    <div class="header">
+      <div class="indicator"></div>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html"><img src="img/NameLogo.png" alt="Logo1" /></a>
+        </div>
+        <div class="navbar">
+          <button class="hamburger" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <nav>
+            <ul>
+              <li><a href="HTML/home.html">Home</a></li>
+              <li class="active"><a href="index.html">Renders</a></li>
+              <li><a href="HTML/figurines.html">Figurines</a></li>
+              <li><a href="HTML/helmets.html">Helmets</a></li>
+              <!-- <li><a href="HTML/contact.html">Contact</a></li> -->
+              <li><a href="HTML/about.html">About</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
 
-    <a href="HTML/renders.html" class="link" id="start1">Renders</a>
-    <a href="HTML/figurines.html" class="link" id="start2">Figurines</a>
-    <a href="HTML/helmets.html" class="link" id="start3">Helmets</a>
+    <div class="overview">
+      <u><h1>What can you find here?</h1></u>
+      <p>
+        Make your imaginations come to life with these amazing renders. Think of
+        amazing battles and trooper designs and we are gonna make it a look like
+        reality!! For more info contact me through
+        <u
+          ><a href="https://discord.gg/4WSZnqNfT2" target="_blank" class="disc"
+            >Discord</a
+          ></u
+        >
+      </p>
+      <br />
+      <!-- <p>Want to support us or just love our merch? 
+       Thats fine feel free to check it out!! ===> <u><a href="HTML/Merch.html">Merch</a></u>
+    </p> -->
+    </div>
 
-    <canvas class="canvas"></canvas>
+    <div class="prices">
+      <br /><br />
+      <h2><u>Prices per character:</u></h2>
+      <ul>
+        <li>Trooper - <b class="highlight">20€ (21$ USD)</b></li>
+        <li>
+          ARC Trooper/Clone Commando - <b class="highlight">35€ (36.5$ USD)</b>
+        </li>
+        <li>
+          <i
+            >If the commission contains more then 5-6 ARC/Commando, the old
+            prices will apply, </i
+          >
+          - <b class="highlight"> 15€ (16$ USD)/Trooper, 22€ (23$ USD)/ARC, Commando</b>
+        </li>
+        <li>Portraits - ><b class="highlight">15€ (16$ USD)</b></li>
+        <li>Showcase - ><b class="highlight">20€ (21$ USD)</b></li>
+        <br />
+        <li class="indent">+ 20% no reference fee</li>
+        <li class="indent">+ Any additional modelling fees if required</li>
+        <li class="indent">
+          + 15€ (16.5$ USD) fee to remove the watermark if required
+        </li>
+        <br />
+        <li><u>Hourly rate for modelling is 13€ (14$ USD) / Hour</u></li>
+        <br /><br />
+      </ul>
+      <h2><u>Battlefront 2 Mod</u></h2>
+      <ul>
+        <li>
+          Same prices as for the 3D renders, but for this there is a 10€ (11$ USD) modding fee
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="title">Helmet portraits</h2>
+
+    <br />
+
+    <div class="row-helmets">
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/DattiJet.webp"
+          data-original="../img/Products-HelmetPortrait/DattiJet.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Shawrin.webp"
+          data-original="../img/Products-HelmetPortrait/Shawrin.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Shortfuse.webp"
+          data-original="../img/Products-HelmetPortrait/Shortfuse.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/JD.webp"
+          data-original="../img/Products-HelmetPortrait/JD.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Splode.webp"
+          data-original="../img/Products-HelmetPortrait/Splode.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Diplomat.webp"
+          data-original="../img/Products-HelmetPortrait/Diplomat.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Pilot.webp"
+          data-original="../img/Products-HelmetPortrait/Pilot.webp"
+        />
+      </div>
+      <div class="helmets">
+        <img
+          src="../img/Products-HelmetPortrait/Contex.webp"
+          data-original="../img/Products-HelmetPortrait/Contex.webp"
+        />
+      </div>
+    </div>
+
+    <br />
+
+    <h2 class="title">3d Renders</h2>
+
+    <div class="row-images">
+      <div class="images">
+        <img
+          src="../img/Renders/91.webp"
+          data-original="../img/Renders/91.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/Ammo.webp"
+          data-original="../img/Renders/Ammo.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/B-troop.webp"
+          data-original="../img/Renders/B-troop.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/Hondo.webp"
+          data-original="../img/Renders/Hondo.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/FistBump.webp"
+          data-original="../img/Renders/FistBump.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/IntoDark.webp"
+          data-original="../img/Renders/IntoDark.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/Venator.webp"
+          data-original="../img/Renders/Venator.webp"
+        />
+      </div>
+      <div class="images">
+        <img
+          src="../img/Renders/BB.webp"
+          data-original="../img/Renders/BB.webp"
+        />
+      </div>
+    </div>
 
     <div class="footer">
       <div class="foot-container">
@@ -56,14 +232,15 @@
           <div class="footer-col-1">
             <h2>Don't have Discord? Get it here!</h2>
             <p>
-              <u><a href="https://discord.com/download" target="_blank"
+              <u
+                ><a href="https://discord.com/download" target="_blank"
                   >Download Discord here</a
                 ></u
               >
             </p>
           </div>
           <div class="footer-col-2">
-            <img src="img/NameLogo.png" alt="Logo" />
+            <img src="../img/NameLogo.png" alt="Logo" />
             <p class="thank-you">Thank you for stopping by!</p>
           </div>
           <div class="footer-col-3">
@@ -87,7 +264,8 @@
         </div>
       </div>
     </div>
-    
-    <script src="Scripts/home.js"></script>
+
+    <script src="../Scripts/index.js"></script>
+    <script src="../Scripts/openModal.js"></script>
   </body>
 </html>
