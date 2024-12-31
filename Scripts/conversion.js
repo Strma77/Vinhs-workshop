@@ -4,7 +4,7 @@ async function updateUSDPrices() {
     try {
         console.log("Fetching exchange rates...");
         const response = await fetch(apiUrl);
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        if (!response.ok) throw new Error(`HTTPS error! Status: ${response.status}`);
 
         const data = await response.json();
         console.log("Exchange rate data:", data);
