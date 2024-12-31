@@ -1,4 +1,4 @@
-const apiUrl = "http://data.fixer.io/api/latest?access_key=3a65662db8e812394917b75e762c2162&symbols=USD";
+const apiUrl = "https://data.fixer.io/api/latest?access_key=3a65662db8e812394917b75e762c2162&symbols=USD";
 
 async function updateUSDPrices() {
     try {
