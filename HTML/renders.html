@@ -1,271 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Vinh's Workshop</title>
-    <link rel="icon" href="../img/VinhPNG.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../CSS/header.css" />
-    <link rel="stylesheet" href="../CSS/footer.css" />
-    <link rel="stylesheet" href="../CSS/renders.css" />
+  <title>Vinh's Workshop</title>
+  <link rel="icon" href="../img/VinhPNG.png" type="image/x-icon" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/c6f7fc99a7.js"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="../CSS/header.css" />
+  <link rel="stylesheet" href="../CSS/footer.css" />
+  <link rel="stylesheet" href="../CSS/renders.css" />
 
-    <meta name="authors" content="Vito StrmečKi" />
-    <meta
-      name="description"
-      content="Welcome to Vinh's Workshop, your ultimate destination for showcasing captivating 3D rendered scenes from the Star Wars universe, alongside customizable 3D-printed helmets and figurines inspired by the iconic saga. Immerse yourself in the galaxy far, far away with our intricately crafted models and bring the magic of Star Wars into your own space"
-    />
-    <meta
-      name="keywords"
-      content="renders, helmets, figurines, 3d print, star wars, 3d models, creative, clone"
-    />
-  </head>
-  <body>
-    <!-- <div id="preloader">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/c6f7fc99a7.js" crossorigin="anonymous"></script>
+
+  <meta name="authors" content="Vito StrmečKi" />
+  <meta name="description"
+    content="Custom 3D Star Wars renders crafted in Blender, featuring personalized Clone Wars-inspired digital art." />
+  <meta name="keywords" content="renders, helmets, figurines, 3d print, star wars, 3d models, creative, clone, Custom 3D Star Wars renders, 
+      Clone Wars digital renders, Blender Star Wars art, Personalized 3D sci-fi scenes, High-quality 3D renders, 
+      Star Wars fan art commissions, 3D diorama art for sale, Sci-fi digital art commissions, Star Wars animation renders, 
+      Custom-designed Star Wars scenes" />
+
+  <!-- Open Graph Metadata (OG) -->
+  <meta property="og:title" content="Wanted a scene but never got it? Look no further!">
+  <meta property="og:description" content="Order custom Star Wars 3D renders crafted in Blender. High-quality digital art inspired by Clone Wars and 
+    sci-fi universes, tailored to your requests.">
+  <meta property="og:image" content="https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png">
+  <meta property="og:url" content="https://vinhs-workshop.com/HTML/renders.html">
+  <meta property="og:site_name" content="Vinh's Workshop">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image"> <!-- Use "summary" for smaller images -->
+  <meta name="twitter:title" content="Wanted a scene but never got it? Look no further!">
+  <meta name="twitter:description" content="Order custom Star Wars 3D renders crafted in Blender. High-quality digital art inspired by Clone Wars and 
+    sci-fi universes, tailored to your requests.">
+  <meta name="twitter:image" content="https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png">
+  <meta name="twitter:site" content="@Vinh">
+  <meta name="twitter:creator" content="@Vinh">
+
+  <!-- JSON-LD (Structured Data for Google and Others) -->
+  <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "WebPage",
+     "headline": "Wanted a scene but never got it? Look no further!",
+     "description": "Order custom Star Wars 3D renders crafted in Blender. High-quality digital art inspired by Clone Wars
+      and sci-fi universes, tailored to your requests.",
+     "url": "https://vinhs-workshop.com/HTML/renders.html",
+     "image": {
+       "@type": "ImageObject",
+       "url": "https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png",
+       "width": 1200,
+       "height": 630
+     },
+     "author": {
+       "@type": "Person",
+       "name": "Vito StrmečKi"
+     },
+     "publisher": {
+       "@type": "Individual",
+       "name": "Strma77",
+       "logo": {
+         "@type": "ImageObject",
+         "url": "https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png",
+         "width": 600,
+         "height": 60
+       }
+     }
+   }
+  </script>
+
+  <!-- Additional Metadata for Reddit -->
+  <meta name="robots" content="index, follow"> <!-- Reddit respects robots.txt and meta robots -->
+  <meta property="og:rich_attachment" content="true"> <!-- Encourages rich content previews -->
+
+  <!-- WhatsApp Metadata -->
+  <meta property="og:image:width" content="1200"> <!-- WhatsApp prefers specific dimensions -->
+  <meta property="og:image:height" content="630">
+
+  <!-- Email Client Considerations -->
+  <!-- Email clients primarily use the Title and Description tags -->
+  <meta name="format-detection" content="telephone=no"> <!-- Prevents auto-linking of phone numbers -->
+  <!-- Ensures mobile responsiveness -->
+
+  <!-- Fallbacks for Non-Social Platforms -->
+  <meta name="theme-color" content="#000000"> <!-- Used by browsers for theme adaptation -->
+  <link rel="canonical" href="https://vinhs-workshop.com/HTML/renders.html"> <!-- Ensures proper URL recognition -->
+
+</head>
+
+<body>
+  <!-- <div id="preloader">
       <img src="../img/Preloader.gif" alt="Loading..." />
     </div> -->
 
-    <div class="scroll-indicator"></div>
-    <div class="header">
-      <div class="indicator"></div>
-      <div class="container">
-        <div class="logo">
-          <a href="../index.html"><img src="../img/NameLogo.png" alt="Logo1" /></a>
-        </div>
-        <div class="navbar">
-          <button class="hamburger" aria-label="Toggle navigation">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li class="active"><a href="renders.html">Renders</a></li>
-              <li><a href="figurines.html">Figurines</a></li>
-              <li><a href="helmets.html">Helmets</a></li>
-              <!-- <li><a href="contact.html">Contact</a></li> -->
-              <li><a href="about.html">About</a></li>
-            </ul>
-          </nav>
-        </div>
+  <div class="scroll-indicator"></div>
+  <div class="header">
+    <div class="indicator"></div>
+    <div class="container">
+      <div class="logo">
+        <a href="../index.html"><img src="../img/NameLogo.png" alt="Logo1" /></a>
+      </div>
+      <div class="navbar">
+        <button class="hamburger" aria-label="Toggle navigation">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="renders.html">Renders</a></li>
+            <li><a href="figurines.html">Figurines</a></li>
+            <li><a href="helmets.html">Helmets</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
+  </div>
 
-    <div class="overview">
-      <u><h1>What can you find here?</h1></u>
-      <p>
-        Make your imaginations come to life with these amazing renders. Think of
-        amazing battles and trooper designs and we are gonna make it a look like
-        reality!! For more info contact me through
-        <u
-          ><a href="https://discord.gg/4WSZnqNfT2" target="_blank" class="disc"
-            >Discord</a
-          ></u
-        >
-      </p>
-      <br />
-      <!-- <p>Want to support us or just love our merch? 
+  <div class="overview">
+    <u>
+      <h1>What can you find here?</h1>
+    </u>
+    <p>
+      Make your imaginations come to life with these amazing renders. Think of
+      amazing battles and trooper designs and we are gonna make it a look like
+      reality!! For more info contact me through
+      <u><a href="https://discord.gg/4WSZnqNfT2" target="_blank" class="disc">Discord</a></u>
+    </p>
+    <br />
+    <!-- <p>Want to support us or just love our merch? 
        Thats fine feel free to check it out!! ===> <u><a href="HTML/Merch.html">Merch</a></u>
     </p> -->
-    </div>
+  </div>
 
-    <div class="prices">
+  <div class="prices">
+    <br /><br />
+    <h2><u>Prices per character:</u></h2>
+    <ul>
+      <li>Trooper - <b class="highlight">20€ (<span class="usd-price" data-euro="20">21$ USD</span>)</b></li>
+      <li>
+        ARC Trooper/Clone Commando - <b class="highlight">35€ (<span class="usd-price" data-euro="35">21$
+            USD</span>)</b>
+      </li>
+      <li>
+        <i>If the commission contains more then 5-6 ARC/Commando, the old
+          prices will apply, </i>
+        - <b class="highlight"> 15€ (<span class="usd-price" data-euro="15">21$ USD</span>)/Trooper, 22€ (<span
+            class="usd-price" data-euro="22">21$ USD</span>)/ARC, Commando</b>
+      </li>
+      <li>Portraits - ><b class="highlight">15€ (<span class="usd-price" data-euro="15">21$ USD</span>)</b></li>
+      <li>Showcase - ><b class="highlight">20€ (<span class="usd-price" data-euro="20">21$ USD</span>)</b></li>
+      <br />
+      <li class="indent">+ 20% no reference fee</li>
+      <li class="indent">+ Any additional modelling fees if required</li>
+      <li class="indent">
+        + 15€ (<span class="usd-price" data-euro="15">21$ USD</span>) fee to remove the watermark if required
+      </li>
+      <br />
+      <li><u>Hourly rate for modelling is 13€ (<span class="usd-price" data-euro="13">21$ USD</span>) / Hour</u></li>
       <br /><br />
-      <h2><u>Prices per character:</u></h2>
-      <ul>
-        <li>Trooper - <b class="highlight">20€ (<span class="usd-price" data-euro="20">21$ USD</span>)</b></li>
-        <li>
-          ARC Trooper/Clone Commando - <b class="highlight">35€ (<span class="usd-price" data-euro="35">21$ USD</span>)</b>
-        </li>
-        <li>
-          <i
-            >If the commission contains more then 5-6 ARC/Commando, the old
-            prices will apply, </i
-          >
-          - <b class="highlight"> 15€ (<span class="usd-price" data-euro="15">21$ USD</span>)/Trooper, 22€ (<span class="usd-price" data-euro="22">21$ USD</span>)/ARC, Commando</b>
-        </li>
-        <li>Portraits - ><b class="highlight">15€ (<span class="usd-price" data-euro="15">21$ USD</span>)</b></li>
-        <li>Showcase - ><b class="highlight">20€ (<span class="usd-price" data-euro="20">21$ USD</span>)</b></li>
-        <br />
-        <li class="indent">+ 20% no reference fee</li>
-        <li class="indent">+ Any additional modelling fees if required</li>
-        <li class="indent">
-          + 15€ (<span class="usd-price" data-euro="15">21$ USD</span>) fee to remove the watermark if required
-        </li>
-        <br />
-        <li><u>Hourly rate for modelling is 13€ (<span class="usd-price" data-euro="13">21$ USD</span>) / Hour</u></li>
-        <br /><br />
-      </ul>
-      <h2><u>Battlefront 2 Mod</u></h2>
-      <ul>
-        <li>
-          Same prices as for the 3D renders, but for this there is a 10€ (<span class="usd-price" data-euro="10">21$ USD</span>) modding fee
-        </li>
-      </ul>
+    </ul>
+    <h2><u>Battlefront 2 Mod</u></h2>
+    <ul>
+      <li>
+        Same prices as for the 3D renders, but for this there is a 10€ (<span class="usd-price" data-euro="10">21$
+          USD</span>) modding fee
+      </li>
+    </ul>
+  </div>
+
+  <h2 class="title">Helmet portraits</h2>
+
+  <br />
+
+  <div class="row-helmets">
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/DattiJet.webp"
+        data-original="../img/Products-HelmetPortrait/DattiJet.webp" />
     </div>
-
-    <h2 class="title">Helmet portraits</h2>
-
-    <br />
-
-    <div class="row-helmets">
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/DattiJet.webp"
-          data-original="../img/Products-HelmetPortrait/DattiJet.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Shawrin.webp"
-          data-original="../img/Products-HelmetPortrait/Shawrin.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Shortfuse.webp"
-          data-original="../img/Products-HelmetPortrait/Shortfuse.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/JD.webp"
-          data-original="../img/Products-HelmetPortrait/JD.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Splode.webp"
-          data-original="../img/Products-HelmetPortrait/Splode.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Diplomat.webp"
-          data-original="../img/Products-HelmetPortrait/Diplomat.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Pilot.webp"
-          data-original="../img/Products-HelmetPortrait/Pilot.webp"
-        />
-      </div>
-      <div class="helmets">
-        <img
-          src="../img/Products-HelmetPortrait/Contex.webp"
-          data-original="../img/Products-HelmetPortrait/Contex.webp"
-        />
-      </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Shawrin.webp"
+        data-original="../img/Products-HelmetPortrait/Shawrin.webp" />
     </div>
-
-    <br />
-
-    <h2 class="title">3d Renders</h2>
-
-    <div class="row-images">
-      <div class="images">
-        <img
-          src="../img/Renders/91.webp"
-          data-original="../img/Renders/91.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/Ammo.webp"
-          data-original="../img/Renders/Ammo.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/B-troop.webp"
-          data-original="../img/Renders/B-troop.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/Hondo.webp"
-          data-original="../img/Renders/Hondo.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/FistBump.webp"
-          data-original="../img/Renders/FistBump.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/IntoDark.webp"
-          data-original="../img/Renders/IntoDark.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/Venator.webp"
-          data-original="../img/Renders/Venator.webp"
-        />
-      </div>
-      <div class="images">
-        <img
-          src="../img/Renders/BB.webp"
-          data-original="../img/Renders/BB.webp"
-        />
-      </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Shortfuse.webp"
+        data-original="../img/Products-HelmetPortrait/Shortfuse.webp" />
     </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/JD.webp" data-original="../img/Products-HelmetPortrait/JD.webp" />
+    </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Splode.webp"
+        data-original="../img/Products-HelmetPortrait/Splode.webp" />
+    </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Diplomat.webp"
+        data-original="../img/Products-HelmetPortrait/Diplomat.webp" />
+    </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Pilot.webp" data-original="../img/Products-HelmetPortrait/Pilot.webp" />
+    </div>
+    <div class="helmets">
+      <img src="../img/Products-HelmetPortrait/Contex.webp"
+        data-original="../img/Products-HelmetPortrait/Contex.webp" />
+    </div>
+  </div>
 
-    <div class="footer">
-      <div class="foot-container">
-        <div class="row">
-          <div class="footer-col-1">
-            <h2>Don't have Discord? Get it here!</h2>
-            <p>
-              <u
-                ><a href="https://discord.com/download" target="_blank"
-                  >Download Discord here</a
-                ></u
-              >
-            </p>
-          </div>
-          <div class="footer-col-2">
-            <img src="../img/NameLogo.png" alt="Logo" />
-            <p class="thank-you">Thank you for stopping by!</p>
-          </div>
-          <div class="footer-col-3">
-            <h2>Social</h2>
-            <p>
-              <a href="https://instagram.com/vinhs_workshop" target="_blank"
-                ><i class="fa fa-instagram"></i
-              ></a>
-            </p>
-            <p>
-              <a href="https://www.patreon.com/Vinhsworkshop" target="_blank"
-                ><i class="fa-brands fa-patreon"></i
-              ></a>
-            </p>
-            <p>
-              <a href="https://www.paypal.com/paypalme/CPLVinh" target="_blank"
-                ><i class="fa fa-cc-paypal"></i
-              ></a>
-            </p>
-          </div>
+  <br />
+
+  <h2 class="title">3d Renders</h2>
+
+  <div class="row-images">
+    <div class="images">
+      <img src="../img/Renders/91.webp" data-original="../img/Renders/91.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/Ammo.webp" data-original="../img/Renders/Ammo.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/B-troop.webp" data-original="../img/Renders/B-troop.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/Hondo.webp" data-original="../img/Renders/Hondo.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/FistBump.webp" data-original="../img/Renders/FistBump.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/IntoDark.webp" data-original="../img/Renders/IntoDark.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/Venator.webp" data-original="../img/Renders/Venator.webp" />
+    </div>
+    <div class="images">
+      <img src="../img/Renders/BB.webp" data-original="../img/Renders/BB.webp" />
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="foot-container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h2>Don't have Discord? Get it here!</h2>
+          <p>
+            <u><a href="https://discord.com/download" target="_blank">Download Discord here</a></u>
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <img src="../img/NameLogo.png" alt="Logo" />
+          <p class="thank-you">Thank you for stopping by!</p>
+        </div>
+        <div class="footer-col-3">
+          <h2>Social</h2>
+          <p>
+            <a href="https://instagram.com/vinhs_workshop" target="_blank"><i class="fa fa-instagram"></i></a>
+          </p>
+          <p>
+            <a href="https://www.patreon.com/Vinhsworkshop" target="_blank"><i class="fa-brands fa-patreon"></i></a>
+          </p>
+          <p>
+            <a href="https://www.paypal.com/paypalme/CPLVinh" target="_blank"><i class="fa fa-cc-paypal"></i></a>
+          </p>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="../Scripts/index.js"></script>
-    <script src="../Scripts/conversion.js"></script>
-  </body>
+  <script src="../Scripts/index.js"></script>
+  <script src="../Scripts/conversion.js"></script>
+</body>
+
 </html>

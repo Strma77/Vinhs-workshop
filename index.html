@@ -1,93 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Vinh's Workshop</title>
-    <link rel="icon" href="img/VinhPNG.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/home.css" />
+  <title>Vinh's Workshop</title>
+  <link rel="icon" href="img/VinhPNG.png" type="image/x-icon" />
 
-    <script src="Scripts/loader.js"></script>
-	  
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/c6f7fc99a7.js"
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/home.css" />
 
-    <meta name="authors" content="Vito StrmečKi" />
-    <meta
+  <script src="Scripts/loader.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://kit.fontawesome.com/c6f7fc99a7.js" crossorigin="anonymous"></script>
+
+  <meta name="authors" content="Vito StrmečKi" />
+  <!-- <meta
       name="description"
       content="Welcome to Vinh's Workshop, your ultimate destination for showcasing captivating 3D rendered scenes from the Star Wars universe, alongside customizable 3D-printed helmets and figurines inspired by the iconic saga. Immerse yourself in the galaxy far, far away with our intricately crafted models and bring the magic of Star Wars into your own space"
-    />
-    <meta
-      name="keywords"
-      content="renders, helmets, figurines, 3d print, star wars, 3d models, creative, clone"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </head>
-  <body>
-    <!-- <div id="pre`">
+    /> -->
+  <meta name="description"
+    content="Explore custom Star Wars 3D renders, figurines, helmets, accessories, and unique collectibles for fans." />
+  <meta name="keywords"
+    content="renders, helmets, figurines, 3d print, star wars, 3d models, creative, clone, Custom 3D renders, Star Wars 
+      collectibles, Clone Wars merchandise, Custom Clone Trooper helmets, 1:6 scale Star Wars figurines, 3D printed Star 
+      Wars props, Blender 3D art commissions, Star Wars cosplay items, Personalized sci-fi artwork, Star Wars fan creations" />
+
+  <!-- Open Graph Metadata (OG) -->
+  <meta property="og:title" content="Make your imaginations come to reality!">
+  <meta property="og:description" content="Discover custom Star Wars 3D renders, figurines, helmets, and accessories. Perfect for fans, collectors, 
+    and cosplay enthusiasts. Explore our unique creations today!">
+  <meta property="og:image" content="https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png">
+  <meta property="og:url" content="https://vinhs-workshop.com">
+  <meta property="og:site_name" content="Vinh's Workshop">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image"> <!-- Use "summary" for smaller images -->
+  <meta name="twitter:title" content="Make your imaginations come to reality!">
+  <meta name="twitter:description" content="Discover custom Star Wars 3D renders, figurines, helmets, and accessories. Perfect for fans, collectors, 
+    and cosplay enthusiasts. Explore our unique creations today!">
+  <meta name="twitter:image" content="https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png">
+  <meta name="twitter:site" content="@Vinh">
+  <meta name="twitter:creator" content="@Vinh">
+
+  <!-- JSON-LD (Structured Data for Google and Others) -->
+  <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "WebPage",
+     "headline": "Make your imaginations come to reality!",
+     "description": "Discover custom Star Wars 3D renders, figurines, helmets, and accessories. Perfect for fans, collectors, 
+     and cosplay enthusiasts. Explore our unique creations today!",
+     "url": "https://vinhs-workshop.com",
+     "image": {
+       "@type": "ImageObject",
+       "url": "https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png",
+       "width": 1200,
+       "height": 630
+     },
+     "author": {
+       "@type": "Person",
+       "name": "Vito StrmečKi"
+     },
+     "publisher": {
+       "@type": "Individual",
+       "name": "Strma77",
+       "logo": {
+         "@type": "ImageObject",
+         "url": "https://github.com/Strma77/Vinhs-workshop/blob/main/img/NameLogo.png",
+         "width": 600,
+         "height": 60
+       }
+     }
+   }
+  </script>
+
+  <!-- Additional Metadata for Reddit -->
+  <meta name="robots" content="index, follow"> <!-- Reddit respects robots.txt and meta robots -->
+  <meta property="og:rich_attachment" content="true"> <!-- Encourages rich content previews -->
+
+  <!-- WhatsApp Metadata -->
+  <meta property="og:image:width" content="1200"> <!-- WhatsApp prefers specific dimensions -->
+  <meta property="og:image:height" content="630">
+
+  <!-- Email Client Considerations -->
+  <!-- Email clients primarily use the Title and Description tags -->
+  <meta name="format-detection" content="telephone=no"> <!-- Prevents auto-linking of phone numbers -->
+  <!-- Ensures mobile responsiveness -->
+
+  <!-- Fallbacks for Non-Social Platforms -->
+  <meta name="theme-color" content="#000000"> <!-- Used by browsers for theme adaptation -->
+  <link rel="canonical" href="https://vinhs-workshop.com"> <!-- Ensures proper URL recognition -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"
+    integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <!-- <div id="pre`">
       <img src="img/Preloader.gif" alt="Loading..." />
     </div> -->
 
-    <a href="HTML/renders.html" class="link" id="renders">RENDERS</a>
-    <a href="HTML/figurines.html" class="link" id="figurines">FIGURINES</a>
-    <a href="HTML/helmets.html" class="link" id="helmets">HELMETS</a>
+  <a href="HTML/renders.html" class="link" id="renders">RENDERS</a>
+  <a href="HTML/figurines.html" class="link" id="figurines">FIGURINES</a>
+  <a href="HTML/helmets.html" class="link" id="helmets">HELMETS</a>
 
-    <a href="HTML/renders.html" class="link" id="start1">Renders</a>
-    <a href="HTML/figurines.html" class="link" id="start2">Figurines</a>
-    <a href="HTML/helmets.html" class="link" id="start3">Helmets</a>
+  <a href="HTML/renders.html" class="link" id="start1">Renders</a>
+  <a href="HTML/figurines.html" class="link" id="start2">Figurines</a>
+  <a href="HTML/helmets.html" class="link" id="start3">Helmets</a>
 
-    <canvas class="canvas"></canvas>
+  <canvas class="canvas"></canvas>
 
-    <div class="footer">
-      <div class="foot-container">
-        <div class="row">
-          <div class="footer-col-1">
-            <h2>Don't have Discord? Get it here!</h2>
-            <p>
-              <u><a href="https://discord.com/download" target="_blank"
-                  >Download Discord here</a
-                ></u
-              >
-            </p>
-          </div>
-          <div class="footer-col-2">
-            <img src="../img/NameLogo.png" alt="Logo" />
-            <p class="thank-you">Thank you for stopping by!</p>
-          </div>
-          <div class="footer-col-3">
-            <h2>Social</h2>
-            <p>
-              <a href="https://instagram.com/vinhs_workshop" target="_blank"
-                ><i class="fa fa-instagram"></i
-              ></a>
-            </p>
-            <p>
-              <a href="https://www.patreon.com/Vinhsworkshop" target="_blank"
-                ><i class="fa-brands fa-patreon"></i
-              ></a>
-            </p>
-            <p>
-              <a href="https://www.paypal.com/paypalme/CPLVinh" target="_blank"
-                ><i class="fa fa-cc-paypal"></i
-              ></a>
-            </p>
-          </div>
+  <div class="footer">
+    <div class="foot-container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h2>Don't have Discord? Get it here!</h2>
+          <p>
+            <u><a href="https://discord.com/download" target="_blank">Download Discord here</a></u>
+          </p>
+        </div>
+        <div class="footer-col-2">
+          <img src="../img/NameLogo.png" alt="Logo" />
+          <p class="thank-you">Thank you for stopping by!</p>
+        </div>
+        <div class="footer-col-3">
+          <h2>Social</h2>
+          <p>
+            <a href="https://instagram.com/vinhs_workshop" target="_blank"><i class="fa fa-instagram"></i></a>
+          </p>
+          <p>
+            <a href="https://www.patreon.com/Vinhsworkshop" target="_blank"><i class="fa-brands fa-patreon"></i></a>
+          </p>
+          <p>
+            <a href="https://www.paypal.com/paypalme/CPLVinh" target="_blank"><i class="fa fa-cc-paypal"></i></a>
+          </p>
         </div>
       </div>
     </div>
-    
-    <script src="Scripts/home.js"></script>
-  </body>
+  </div>
+
+  <script src="Scripts/home.js"></script>
+</body>
+
 </html>
